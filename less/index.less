@@ -53,6 +53,14 @@ table {
     box-sizing: border-box;
 }
 
+@media(max-width: 500px) {
+	width: 100%;
+
+}
+
+@background: teal;
+@h4: darkslategray;
+
 html, body {
 	height: 100%;
 	background: black;
@@ -60,55 +68,86 @@ html, body {
 
 .container {
 	font-family: "American Typewriter", sans-serif;
-}
+	
+	h1 {
+		display: flex;
+		justify-content: center;
+		font-size: 50px;
+		background-color: @background;
+		border-radius: 25px;
+		padding: 25px;
+		margin: 25px;
 
-h1 {
-	display: flex;
-	justify-content: center;
-	font-size: 50px;
-	background: teal;
-	border-radius: 25px;
-	padding: 25px;
-	margin: 25px;
+		@media (max-width: 500px) {
+			background: blueviolet;
+			font-size: 25px;
+
+	}
 }
 
 .navbar {
 	display: flex;
 	justify-content: space-evenly;
 	padding: 15px;
-}
 
-a {
-	background: teal;
-	border-radius: 25px;
-	padding: 20px;
-	text-decoration: none;
-	color: black;
-	width: 115px;
-	text-align: center;
+	@media (max-width: 500px) {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	a {
+		background-color: @background;
+		border-radius: 25px;
+		padding: 20px;
+		text-decoration: none;
+		color: black;
+		width: 115px;
+		text-align: center;
+
+		@media (max-width: 500px) {
+			background: blueviolet;
+			margin: 15px;
+		}
+	}
 }
 
 a:hover {
 	background-color: blueviolet;
+	@media (max-width: 500px) {
+		background-color: teal;
+	}
 }
 
 .all {
-	background: teal;
+	background-color: @background;
 	border-radius: 25px;
 	padding: 15px;
 	margin: 25px;
-}
 
-.summary {
-	width: fit-content;
-}
+	@media (max-width: 500px) {
+		background: blueviolet;
+	}
+	}
 
-.experience {
-	width: fit-content;
-}
+	.summary {
+		width: 100%;
+	}
+	
+	.experience {
+		width: 100%;
+	}
+	
+	.education {
+		width: 100%;
+	}
 
-.education {
-	width: fit-content;
+		h4 {
+			color: @h4;
+			
+			@media (max-width: 500px) {
+				color: cadetblue;
+			}
+		}
 }
 
 .contact {
@@ -118,4 +157,9 @@ a:hover {
 	margin: 25px;
 	border-radius: 25px;
 	justify-content: space-evenly;
+
+	@media (max-width: 500px) {
+		background: blueviolet;
+		flex-direction: column;
+	}
 }
