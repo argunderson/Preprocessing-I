@@ -60,6 +60,9 @@ body {
     font-size: 25px;
   }
 }
+.container h2 {
+  text-decoration: underline;
+}
 .container .navbar {
   display: flex;
   justify-content: space-evenly;
