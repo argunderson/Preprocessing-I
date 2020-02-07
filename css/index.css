@@ -43,7 +43,7 @@ body {
   background: black;
 }
 .container {
-  font-family: "American Typewriter", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 .container h1 {
   display: flex;
@@ -60,21 +60,49 @@ body {
     font-size: 25px;
   }
 }
-.container h2 {
-  text-decoration: underline;
+.my-work {
+  background-color: teal;
+  border-radius: 25px;
+  padding: 15px;
+  margin: 25px;
 }
-.container .navbar {
+@media (max-width: 500px) {
+  .my-work {
+    background: blueviolet;
+  }
+}
+.my-work .summary {
+  width: 100%;
+}
+.my-work .experience {
+  width: 100%;
+}
+.my-work .education {
+  width: 100%;
+}
+.my-work h4 {
+  color: darkslategray;
+}
+@media (max-width: 500px) {
+  .my-work h4 {
+    color: cadetblue;
+  }
+}
+h3 {
+  background-color: teal;
+}
+.navbar {
   display: flex;
   justify-content: space-evenly;
   padding: 15px;
 }
 @media (max-width: 500px) {
-  .container .navbar {
+  .navbar {
     flex-direction: column;
     align-items: center;
   }
 }
-.container .navbar a {
+.navbar a {
   background-color: teal;
   border-radius: 25px;
   padding: 20px;
@@ -84,44 +112,44 @@ body {
   text-align: center;
 }
 @media (max-width: 500px) {
-  .container .navbar a {
+  .navbar a {
     background: blueviolet;
     margin: 15px;
   }
 }
-.container a:hover {
+a:hover {
   background-color: blueviolet;
 }
 @media (max-width: 500px) {
-  .container a:hover {
+  a:hover {
     background-color: teal;
   }
 }
-.container .all {
+.all {
   background-color: teal;
   border-radius: 25px;
   padding: 15px;
   margin: 25px;
 }
 @media (max-width: 500px) {
-  .container .all {
+  .all {
     background: blueviolet;
   }
 }
-.container .summary {
+.all .summary {
   width: 100%;
 }
-.container .experience {
+.all .experience {
   width: 100%;
 }
-.container .education {
+.all .education {
   width: 100%;
 }
-.container h4 {
+.all h4 {
   color: darkslategray;
 }
 @media (max-width: 500px) {
-  .container h4 {
+  .all h4 {
     color: cadetblue;
   }
 }
